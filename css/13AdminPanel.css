@@ -1,0 +1,243 @@
+@import url('Header.css');
+body {
+	background-image:url(images/13.png);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+	height: calc(100vh - 100px);
+	overflow: auto;
+}
+
+main {
+	font-family: "Arial", "Helvetica";
+	width: 100%;
+	color: #fff;
+	font-size: 1.2em;
+	margin-top: 100px;
+}
+
+div.text {
+	line-height: 1.5em;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+i {
+	font-size: 4.5em;
+	color: #fb9c9c;
+	float: left;
+	transition: 0.5s;
+}
+
+i:hover {
+	color: #ef7979;
+}
+
+i ~ span {
+	margin-left: calc(4.5em + 5%);
+	width: 80%;
+}
+
+p > span {
+  display: block;
+  margin-bottom: 25px;
+}
+
+span.t ~ span:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+span.first {
+  font-size: 1.3em;
+	font-weight: bold;
+	color: #fb9c9c;
+	margin-bottom: 15px;
+}
+
+span.t {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+div.form {
+	width: 34%;
+	margin-left: 33%;
+	margin-right: 33%;
+	/*border: 1px solid white;*/
+}
+
+button:not(header button) {
+	width: 42%;
+	height: 45px;
+	color: #fff;
+	font-size: 0.9em;
+	background: #da3e3e;
+  margin-bottom: 10px;
+  margin-left: 1%;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+button:hover:not(header button) {
+	background: #ec5f5f;
+}
+
+button.select:first-child {
+	margin-left: 7.5%;
+}
+
+p.simple {
+	font-family: "Arial";
+	font-size: 1em;
+	text-align: center;
+  margin-bottom: 1.5%;
+}
+
+p.error {
+	color: #f64444;
+	font-family: "Arial";
+	font-size: 1em;
+	text-align: center;
+  margin-bottom: 1.5%;
+}
+
+p.good {
+	color: #38b308;
+	font-family: "Arial";
+	font-size: 1em;
+	text-align: center;
+  margin-bottom: 4%;
+}
+
+::placeholder {
+  color: rgb(255,255,255,0.2);
+}
+
+textarea{
+	font-family: "Arial";
+	font-size: 0.9em;
+	width: 65%;
+	margin-left: 17.5%;
+	margin-right: 17.5%;
+	height: 60px;
+	color: #fff;
+	resize: none;
+	display: block;
+	outline: none;
+	border-radius: 5px;
+	transition: 1s;
+	background: transparent;
+	border-color: #aaa;
+	padding: 0.75%;
+}
+textarea:not(:first-child) {
+	margin-top: 2.5%;
+}
+textarea:hover {
+	transition: 0.7s;
+	background-color: rgba(209, 186, 186, 0.05);
+	color: #fff;
+}
+textarea:focus {
+	transition: 0.2s;
+	border: 1px solid #da3e3e;
+	background-color: rgba(209, 186, 186, 0.05);
+	color: #fff;
+}
+
+#condition, #answer, #def, #idea {
+	height: 150px;
+}
+
+p.d {
+	text-align: center;
+	margin-top: 15px;
+}
+
+div.diff {
+	margin-left: calc(50% - 35px);
+	margin-right: auto;
+	width: 70px;
+}
+
+button.send, button.reset {
+	margin-top: 20px;
+	width: 25%;
+	margin-left: 37.5%;
+	margin-right: 37.5%;
+}
+
+button.reset {
+	background-color: #da2722;
+	margin-top: 5px;
+}
+
+button.reset:hover {
+	background-color: #a42825;
+	color: #c6c6c6;
+}
+
+div#bug button.reset:last-child {
+	margin-bottom: 50px
+}
+
+@media (max-width: 1400px) {
+	textarea {
+			width: 85%;
+			margin-left: 7.5%;
+			margin-right: 7.5%;
+	}
+}
+@media (max-width: 1200px) {
+	button:not(header button) {
+		width: 48%;
+		font-size: 0.8em;
+	}
+	button.select:first-child {
+		margin-left: 1%;
+	}
+}
+@media (max-width: 1000px) {
+	main {
+		font-size: 1.1em;
+	}
+	div.text:last-child {
+		margin-top: 20px;
+	}
+	div.text {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	i {
+		font-size: 4em;
+	}
+	i ~ span {
+		margin-left: calc(4.5em + 5%);
+	}
+}
+@media (max-width: 974px) {
+	body {
+		height: calc(100vh - 150px);
+	}
+	main {
+		margin-top: 150px;
+	}
+}
+@media (max-width: 840px) {
+	div.form {
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+}
+@media (max-width: 700px) {
+	main {
+		font-size: 1em;
+	}
+}

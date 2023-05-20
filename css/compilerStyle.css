@@ -1,0 +1,165 @@
+html {
+  background-image: url("images/indexGr2.png") !important;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: auto;
+}
+
+body {
+  background-image: url("images/indexGr2.png") !important;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+div.condition {
+  font-family: "Arial";
+  font-size: 1.2em;
+  color: #e2e8f0;
+  width: 100%;
+  max-height: 200px;
+  /*border: 1px solid white;
+    margin-bottom: -30px;
+  */
+  padding-left: 7px;
+  margin-top: 100px;
+
+}
+
+p.start {
+  font-weight: 700;
+  font-family: "Arial";
+}
+
+div#result_window textarea, div#compiler_window textarea#code, div#compiler_window textarea#input{
+  background: transparent!important;
+  height: 500px;
+  max-height: 500px;
+  min-height: 500px;
+  resize: none;
+}
+
+button.run, button.clear {
+  transition: 0.5s;
+  font-weight: 400;
+  font-family: "Arial";
+  height: 45px;
+}
+
+button.run:hover {
+  background: #44c474;
+  color: #fff;
+}
+
+button.clear:hover {
+  background: #cf4c4c;
+  color: #fff;
+}
+
+div.buttons {
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a#back {
+  display: block;
+  width: 170px;
+  height: 45px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.send {
+  display: block;
+	width: 170px;
+	height: 45px;
+  font-family: "Arial";
+	color: #e2e8f0;
+	font-size: 1em;
+	background: #b91c1c;
+  margin-bottom: 10px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .5s;
+	cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.send:hover {
+  background: #cf4c4c;
+  color: #fff;
+}
+
+button.send i {
+  margin-right: 5px;
+}
+
+p.base {
+  font-family: "Arial";
+  font-size: 1.2em;
+  color: #e2e8f0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 560px;
+  margin-bottom: 10px;
+  /*border: 1px solid white;*/
+}
+
+div#compiler_window:last-of-type {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#compiler_window textarea#input{
+  color: #e2e8f0;
+  padding-left: 5px;
+}
+
+button#go {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  div.condition {
+    font-size: 1.1em;
+  }
+  p.start {
+    font-size: 1.75em;
+  }
+  p.base {
+    font-size: 1.1em;
+    width: 515px;
+  }
+}
+@media (max-width: 975px) {
+  div.condition {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 850px) {
+  div.condition {
+    font-size: 1em;
+  }
+  p.start {
+    font-size: 1.5em;
+  }
+  p.base {
+    font-size: 1em;
+    width: 470px;
+  }
+}
+@media (max-width: 730px) {
+  div.condition {
+    font-size: 0.95em;
+  }
+}

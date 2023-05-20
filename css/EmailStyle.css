@@ -1,0 +1,12 @@
+@import url('RegAutStyles.css');
+
+.main {
+	border: 1px solid rgb(255, 255, 255, 0.2);
+	height: 400px;
+}
+
+label {
+	cursor: text;
+	font-size: 1.8em;
+	text-align: center;
+}
